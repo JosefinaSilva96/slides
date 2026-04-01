@@ -329,6 +329,12 @@
   .reveal h1, .reveal h2, .reveal h3 {
     color: #6b2d4e !important;
   }
+  .reveal .slides section {
+    pointer-events: none;
+  }
+  .reveal .slides section * {
+    pointer-events: auto;
+  }
   .petal {
     position: fixed;
     width: 10px;
@@ -337,7 +343,7 @@
     border-radius: 50% 0 50% 50%;
     animation: drift linear infinite;
     opacity: 0;
-    z-index: 9999;
+    z-index: 99999;
     pointer-events: none;
   }
   @keyframes drift {
