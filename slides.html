@@ -323,17 +323,8 @@
   .reveal-viewport {
     background: linear-gradient(135deg, #fdf0f5 0%, #f2c4d0 50%, #e8a0b8 100%) !important;
   }
-  .reveal .slides {
-    color: #3d1a2e !important;
-  }
   .reveal h1, .reveal h2, .reveal h3 {
     color: #6b2d4e !important;
-  }
-  .reveal .slides section {
-    pointer-events: none;
-  }
-  .reveal .slides section * {
-    pointer-events: auto;
   }
   .petal {
     position: fixed;
@@ -352,13 +343,22 @@
     90%  { opacity: 0.6; }
     100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
   }
-  .petal:nth-child(1) { left: 10%; animation-duration: 8s;  animation-delay: 0s; }
-  .petal:nth-child(2) { left: 25%; animation-duration: 11s; animation-delay: 2s; }
-  .petal:nth-child(3) { left: 45%; animation-duration: 9s;  animation-delay: 4s; }
-  .petal:nth-child(4) { left: 60%; animation-duration: 12s; animation-delay: 1s; }
-  .petal:nth-child(5) { left: 78%; animation-duration: 10s; animation-delay: 3s; }
-  .petal:nth-child(6) { left: 90%; animation-duration: 9s;  animation-delay: 5s; }
   </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var positions = [10, 25, 45, 60, 78, 90, 35, 55];
+    var durations = [8, 11, 9, 12, 10, 9, 13, 10];
+    var delays = [0, 2, 4, 1, 3, 5, 6, 7];
+    for (var i = 0; i < 8; i++) {
+      var petal = document.createElement("div");
+      petal.className = "petal";
+      petal.style.left = positions[i] + "%";
+      petal.style.animationDuration = durations[i] + "s";
+      petal.style.animationDelay = delays[i] + "s";
+      document.body.appendChild(petal);
+    }
+  });
+  </script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -371,27 +371,6 @@
 <div class="quarto-title-authors">
 </div>
 
-</section>
-<section class="slide level2">
-
-<div class="petal">
-
-</div>
-<div class="petal">
-
-</div>
-<div class="petal">
-
-</div>
-<div class="petal">
-
-</div>
-<div class="petal">
-
-</div>
-<div class="petal">
-
-</div>
 </section>
 <section id="about-me" class="slide level2">
 <h2>About me</h2>
