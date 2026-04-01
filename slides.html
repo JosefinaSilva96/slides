@@ -7,7 +7,7 @@
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <title>Josefina Silva Fuentealba</title>
@@ -319,8 +319,42 @@
       margin-right: 0; 
     }
   </style>
+  <style>
+  .reveal-viewport {
+    background: linear-gradient(135deg, #fdf0f5 0%, #f2c4d0 50%, #e8a0b8 100%) !important;
+  }
+  .reveal .slides {
+    color: #3d1a2e !important;
+  }
+  .reveal h1, .reveal h2, .reveal h3 {
+    color: #6b2d4e !important;
+  }
+  .petal {
+    position: fixed;
+    width: 10px;
+    height: 12px;
+    background: rgba(212, 132, 154, 0.8);
+    border-radius: 50% 0 50% 50%;
+    animation: drift linear infinite;
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  @keyframes drift {
+    0%   { transform: translateY(-20px) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.9; }
+    90%  { opacity: 0.6; }
+    100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+  }
+  .petal:nth-child(1) { left: 10%; animation-duration: 8s;  animation-delay: 0s; }
+  .petal:nth-child(2) { left: 25%; animation-duration: 11s; animation-delay: 2s; }
+  .petal:nth-child(3) { left: 45%; animation-duration: 9s;  animation-delay: 4s; }
+  .petal:nth-child(4) { left: 60%; animation-duration: 12s; animation-delay: 1s; }
+  .petal:nth-child(5) { left: 78%; animation-duration: 10s; animation-delay: 3s; }
+  .petal:nth-child(6) { left: 90%; animation-duration: 9s;  animation-delay: 5s; }
+  </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -331,6 +365,27 @@
 <div class="quarto-title-authors">
 </div>
 
+</section>
+<section class="slide level2">
+
+<div class="petal">
+
+</div>
+<div class="petal">
+
+</div>
+<div class="petal">
+
+</div>
+<div class="petal">
+
+</div>
+<div class="petal">
+
+</div>
+<div class="petal">
+
+</div>
 </section>
 <section id="about-me" class="slide level2">
 <h2>About me</h2>
@@ -533,12 +588,6 @@
         // devices. It is advisable to set this to a lower number than
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
-
-        // Parallax background image
-        parallaxBackgroundImage: 'https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1920', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
-
-        // Parallax background size
-        parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px"
 
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
