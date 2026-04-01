@@ -1,0 +1,63 @@
+---
+title: "Josefina Silva Fuentealba"
+subtitle: "Junior Economist | World Bank Group"
+format:
+  revealjs:
+    theme: dark
+    slide-number: true
+    transition: slide
+    background-transition: fade
+include-in-header:
+  text: |
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    </style>
+---
+
+::: {#particles-js}
+:::
+
+```{=html}
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    color: { value: "#4a7c59" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" }
+    }
+  }
+});
+</script>
+```
+
+## About me
+
+-   Junior Economist at the **World Bank Group**
+-   Specialising in public finance and governance
+-   R, Stata, Python
+
+## Research
+
+-   Public finance and investment systems
+-   Financial inclusion and gender
+-   Education policy
+
+## Working Papers
+
+-   **Feeling chased?** Brown credit dynamics and banks' response to environmental law
+-   **Migration, banking, and gender**: Do remittances impact women's access to credit?
